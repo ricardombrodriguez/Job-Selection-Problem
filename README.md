@@ -13,7 +13,24 @@ Under the rules given above a programmer cannot interrupt a programming task to 
 
 ## How to compile and run
 
+To compile the program, you need to be inside the *A01/* folder and type the following string in the command line:
 
+```
+make job_selection
+```
+
+After this, you can now execute the main program by entering the following line:
+
+```
+./job_selection (mec. number) (number of programs) (number of programmers) (seed)
+```
+
+To simplify our work and to produce data for some graphs, we run the *job_selection_do_all*, a BASH file that allows us to execute all possible combinations of the *job_selection.c* program. It will store the data of each possible combination in a directory. To run this BASH file we give the user permission to execute it and we type:
+
+```
+chmod u+x job_selection_do_all
+./job_selection_do_all
+```
 
 ## Authors
 
